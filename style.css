@@ -24,8 +24,8 @@ body {
     bottom:17%;
     left: 0;
     right: 30%;
-    width: 70%;
-    height: auto;
+    width: 58%;
+    height: 64%;
     border-radius: 24px;
 }
 .salida_encriptador {
@@ -44,9 +44,13 @@ body {
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
 }
 
+.ocultar_vacio {
+    display: none;
+}
+
 .botones {
     position: absolute;
-    top: 83%;
+    top: 76%;
     bottom: 0%;
     width: 70%;
     height: auto;
@@ -59,7 +63,7 @@ body {
 }
 
 .entrada_encriptador {
-    margin-left: 16.5%;
+    margin-left: 12%;
     
 }
 
@@ -132,6 +136,31 @@ textarea::placeholder {
     height: 67px;
     justify-content: center;
     background: #D8DFE8;
+    border: 2px solid #0A3871;
+    border-radius: 24px;
+    cursor: pointer;
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 0px;
+    text-align: center;
+    color: #0A3871;
+}
+
+.output_text {
+}
+.boton_copiar {
+    position: relative;
+    top: 80%;
+    right: 10%;
+    text-align: center;
+    justify-content: center;
+    width: 120%;
+    height: 67px;
+    justify-content: center;
+    background: #ffffff;
     border: 2px solid #0A3871;
     border-radius: 24px;
     cursor: pointer;

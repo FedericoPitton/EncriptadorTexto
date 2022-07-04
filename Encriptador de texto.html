@@ -22,19 +22,21 @@
             </div>
 
             <div class="entrada_encriptador">
-                <textarea type="text" class="input_text"  placeholder="Ingrese el texto aquí" required></textarea>
+                <textarea type="text" class="input_text" autofocus placeholder="Ingrese el texto aquí" required></textarea>
                
             </div>
 
             <div class="salida_encriptador">
-                <div>
+                <div class="ocultar_vacio">
                     <img src="Imagenes/Muñeco.png" class="muñeco_salida"></img>
                     <h1 class="texto_vacio">Ningún mensaje fue encontrado</h1>
                     <h2 class="texto_ingresar">Ingresa el texto que desees encriptar o desencriptar.</h2>
                 </div>
-                <!--<input type="text" class="output-texto">-->
-                <!--<textarea class="output_text"></textarea>-->
-                <!--<output type="hidden" class="output-texto"> 60 </output>-->
+
+                <div class="ocultar_encriptado">
+                    <textarea type="text" class="output_text" readonly ></textarea>
+                    <button type="button" class="boton_copiar">Copiar</button>
+                </div>
             </div>
 
             <div class="botones">
