@@ -9,28 +9,39 @@
         <title>Encriptador de Texto</title>
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 
     </head>
 
-    <body>
-        <header>
-            <form>
+    <body class="conteiner">
+
+            <div class="titulo">
+                <img src="Imagenes/logo.png" class="logo">
+            </div>
+
+            <div class="entrada_encriptador">
+                <textarea type="text" class="input_text"  placeholder="Ingrese el texto aquí" required></textarea>
+               
+            </div>
+
+            <div class="salida_encriptador">
                 <div>
-                    <h1><img src="Imagenes/logo.png"></h1>
+                    <img src="Imagenes/Muñeco.png" class="muñeco_salida"></img>
+                    <h1 class="texto_vacio">Ningún mensaje fue encontrado</h1>
+                    <h2 class="texto_ingresar">Ingresa el texto que desees encriptar o desencriptar.</h2>
                 </div>
-                <main>
-                    <input type="text" class="input-texto" required>
-                    <input type="submit" value="Encriptar" class="encriptar">
-                    <input type="submit" value="Desencriptar" class="desencriptar">
-                    <output type="hidden" class="output-texto"> 60 </output>
-                </main>
+                <!--<input type="text" class="output-texto">-->
+                <!--<textarea class="output_text"></textarea>-->
+                <!--<output type="hidden" class="output-texto"> 60 </output>-->
+            </div>
 
-            </form>
-            
-
-
-
-        </header>
+            <div class="botones">
+                <h3 id="condicion_botones"><img src="Imagenes/alerta_condicion.png" id="alerta_botones">Letras minúsculas y sin acentos</img></h3>
+                <button type="button"  class="boton_encriptar">Encriptar</button>
+                <button type="button"  class="boton_desencriptar">Desencriptar</button>
+            </div>
 
     </body>
 
