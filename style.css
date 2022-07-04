@@ -47,6 +47,9 @@ body {
 .ocultar_vacio {
     display: none;
 }
+.ocultar_encriptado {
+    
+}
 
 .botones {
     position: absolute;
@@ -68,6 +71,8 @@ body {
 }
 
 .input_text {
+    width: 90%;
+    height: 80%;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -150,14 +155,22 @@ textarea::placeholder {
 }
 
 .output_text {
+    margin-top: 10%;
+    width: 90%;
+    height: 75%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    color: #495057;
+
 }
 .boton_copiar {
     position: relative;
-    top: 80%;
-    right: 10%;
+    top: 5%;
     text-align: center;
     justify-content: center;
-    width: 120%;
+    width: 90%;
     height: 67px;
     justify-content: center;
     background: #ffffff;

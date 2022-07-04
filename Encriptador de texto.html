@@ -22,7 +22,7 @@
             </div>
 
             <div class="entrada_encriptador">
-                <textarea type="text" class="input_text" autofocus placeholder="Ingrese el texto aquí" required></textarea>
+                <textarea type="text" class="input_text" id="entrada_texto" autofocus placeholder="Ingrese el texto aquí" required></textarea>
                
             </div>
 
@@ -34,7 +34,7 @@
                 </div>
 
                 <div class="ocultar_encriptado">
-                    <textarea type="text" class="output_text" readonly ></textarea>
+                    <textarea type="text" class="output_text" id="salida_texto" readonly ></textarea>
                     <button type="button" class="boton_copiar">Copiar</button>
                 </div>
             </div>
@@ -44,7 +44,8 @@
                 <button type="button"  class="boton_encriptar">Encriptar</button>
                 <button type="button"  class="boton_desencriptar">Desencriptar</button>
             </div>
-
+            <script src="encriptar.js"></script>
     </body>
+
 
 </html>
