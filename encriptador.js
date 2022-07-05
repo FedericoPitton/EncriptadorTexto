@@ -2,6 +2,7 @@ var boton_encriptar = document.querySelector('.boton_encriptar');
 var boton_desencriptar = document.querySelector('.boton_desencriptar');
 var boton_copiar = document.querySelector('.boton_copiar');
 
+/* Evento para boton encriptar y funcionalidades*/ 
 boton_encriptar.addEventListener('click', function(event) {
     var texto_encriptar = document.getElementById("entrada_texto").value;
     if (validador_requisitos(texto_encriptar)) {      
@@ -12,7 +13,7 @@ boton_encriptar.addEventListener('click', function(event) {
     } 
 
 });
-
+/* Evento para boton desencriptar y funcionalidades*/ 
 boton_desencriptar.addEventListener('click', function(event) { 
     var texto_encriptar = document.getElementById("entrada_texto").value;
     if (validador_requisitos(texto_encriptar)) {      
@@ -22,7 +23,7 @@ boton_desencriptar.addEventListener('click', function(event) {
         }
     } 
 });
-
+/* Evento para boton copiar y funcionalidades*/ 
 boton_copiar.addEventListener('click', function(event) {
     var texto_copiado = document.getElementById("salida_texto");
     texto_copiado.select();
