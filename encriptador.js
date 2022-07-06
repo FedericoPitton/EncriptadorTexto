@@ -1,6 +1,7 @@
 var boton_encriptar = document.querySelector('.boton_encriptar');
 var boton_desencriptar = document.querySelector('.boton_desencriptar');
 var boton_copiar = document.querySelector('.boton_copiar');
+const texto_copiado = document.querySelector('.output_text');
 
 /* Evento para boton encriptar y funcionalidades*/ 
 boton_encriptar.addEventListener('click', function(event) {
@@ -25,9 +26,12 @@ boton_desencriptar.addEventListener('click', function(event) {
 });
 /* Evento para boton copiar y funcionalidades*/ 
 boton_copiar.addEventListener('click', function(event) {
-    var texto_copiado = document.getElementById("salida_texto");
+    
     texto_copiado.select();
-    document.execCommand('copy');
+    texto_copiado.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(texto_copiado.value);
+    texto_copiado.setSelectionRange(0,0);
+    /*document.execCommand('copy');*/
 
 });
 
