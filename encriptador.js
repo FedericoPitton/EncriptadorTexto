@@ -83,22 +83,22 @@ function encriptador(texto) {
     for (var i = 0; i < texto.length; i++) {
         switch (texto[i]) {
             case 'a':
-                texto1 +='ai';
+                texto_encriptado +='ai';
                 break;
             case 'e':
-                texto1 +='enter';
+                texto_encriptado +='enter';
                 break;
             case 'i':
-                texto1 +='imes';
+                texto_encriptado +='imes';
                 break;
             case 'o':
-                texto1 +='ober';
+                texto_encriptado +='ober';
                 break;
             case 'u':
-                texto1 +='ufat';
+                texto_encriptado +='ufat';
                 break;
             default:
-                texto1 += texto[i];
+                texto_encriptado += texto[i];
         }
     }    
     return texto_encriptado;

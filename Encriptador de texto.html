@@ -26,7 +26,14 @@
                
             </div>
 
-            <div class="salida_encriptador">
+            <div>
+                <h3 id="condicion_botones"><img src="Imagenes/alerta_condicion.png" >Letras minúsculas y sin acentos</img></h3>
+            </div>
+            <div class="botones">
+                <button type="button"  class="boton_encriptar" id="botones_aspecto">Encriptar</button>
+                <button type="button"  class="boton_desencriptar" id="botones_aspecto">Desencriptar</button>
+            </div>
+            
                 <div class="ocultar_vacio" id="ocultar_vacio">
                     <img src="Imagenes/Muñeco.png" class="muñeco_salida"></img>
                     <h1 class="texto_vacio">Ningún mensaje fue encontrado</h1>
@@ -37,13 +44,9 @@
                     <textarea type="text" class="output_text" id="salida_texto" readonly></textarea>
                     <button type="button" class="boton_copiar">Copiar</button>
                 </div>
-            </div>
 
-            <div class="botones">
-                <h3 id="condicion_botones"><img src="Imagenes/alerta_condicion.png" id="alerta_botones">Letras minúsculas y sin acentos</img></h3>
-                <button type="button"  class="boton_encriptar">Encriptar</button>
-                <button type="button"  class="boton_desencriptar">Desencriptar</button>
-            </div>
+
+
             <script src="encriptador.js"></script>
     </body>
 
