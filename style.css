@@ -85,7 +85,9 @@ body {
 }
 
 textarea {
-    border:0
+    border:none;
+    outline: none;
+
 }
 
 textarea::placeholder {
